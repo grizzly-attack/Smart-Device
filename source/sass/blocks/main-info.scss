@@ -5,7 +5,7 @@
   min-height: 620px;
   box-sizing: border-box;
 
-  &::before {
+  /*&::before {
     content: "";
     position: absolute;
 
@@ -21,7 +21,7 @@
 
     overflow: hidden;
     z-index: -1;
-  }
+  }*/
 }
 
 .main-info__title {
@@ -94,13 +94,13 @@
     margin-top: 41px;
     min-height: 573px;
 
-    &::before {
+    /*&::before {
       background-size: 465px 340px;
       width: 465px;
       height: 340px;
 
       left: 69%;
-    }
+    }*/
   }
 
   .main-info__scroll {
@@ -141,13 +141,13 @@
 
     @include padding;
 
-    &::before {
+    /*&::before {
       background-size: 301px 220px;
       width: 301px;
       height: 220px;
 
       left: 7%;
-    }
+    }*/
   }
 
   .main-info__title {

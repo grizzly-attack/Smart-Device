@@ -68,8 +68,8 @@
     color: #ffffff;
   }
 
-  &:active {
-    color: (255, 255, 255, 0.3);
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -125,9 +125,5 @@
     margin-top: 19px;
 
     height: 100px;
-    overflow: hidden;
-
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
 }
