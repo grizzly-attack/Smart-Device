@@ -10,21 +10,31 @@
 <body>
   <header class="page-header">
     <p class="page-header__logo">
-      <img class="page-header__logo-image" src="img/SmartDevice.svg" alt="логотип Smart Device" width="202" height="52">
+      <picture>
+        <source media="(max-width: 768px)" srcset="img/SmartDevice__mobile.svg">
+        <img class="page-header__logo-image" src="img/SmartDevice.svg" alt="логотип Smart Device" width="202" height="52">
+      </picture>
     </p>
 
-    <p class="page-header__contacts">
-      <a class="page-header__link page-header__link--mail" href="mailto:info@sd.ru">info@sd.ru</a>
-      <a class="page-header__link page-header__link--tel" href="tel:+7 (495) 000 52 52">+7 (495) 000 52 52</a>
+    <div class="page-header__contacts">
+      <p class="page-header__list">
+        <a class="page-header__link page-header__link--mail" href="mailto:info@sd.ru"><span class="page-header__link--hidden">info@sd.ru</span></a>
+        <a class="page-header__link page-header__link--tel" href="tel:+7 (495) 000 52 52"><span class="page-header__link--hidden">+7 (495) 000 52 52</span></a>
+      </p>
+
       <a class="page-header__button" href="#">Заказать звонок</a>
-    </p>
+    </div>
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Печатные платы</h1>
-    <p class="page-main__message">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-    <a class="page-main__button">Получить бесплатную консультацию</a>
-    <p class="page-main__text">Скролл вниз</p>
+    <h1 class="visually-hidden">Печатные платы Smart Device</h1>
+
+    <section class="main-info wrapper">
+      <h2 class="main-info__title">Печатные платы</h2>
+      <p class="main-info__message">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+      <a class="main-info__button">Получить бесплатную консультацию</a>
+      <p class="main-info__scroll">Скролл вниз</p>
+    </section>
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
