@@ -2,7 +2,8 @@
   margin-top: 173px;
   color: #ffffff;
   position: relative;
-  min-height: 793px;
+  min-height: 620px;
+  box-sizing: border-box;
 
   &::before {
     content: "";
@@ -15,10 +16,11 @@
 
     width: 705px;
     height: 515px;
-    left: 777px;
+    left: 54%;
     top: 0;
 
     overflow: hidden;
+    z-index: -1;
   }
 }
 
@@ -33,11 +35,11 @@
   margin: 0;
   padding-top: 58px;
   padding-left: 15px;
-  width: 777px;
+  width: 54%;
 }
 
 .main-info__message {
-  width: 683px;
+  width: 48%;
 
   font-size: 22px;
   line-height: 34px;
@@ -90,14 +92,14 @@
 @media (max-width: $desktop-width) {
   .main-info {
     margin-top: 41px;
-    min-height: 614px;
+    min-height: 573px;
 
     &::before {
       background-size: 465px 340px;
       width: 465px;
       height: 340px;
 
-      left: 510px;
+      left: 69%;
     }
   }
 
@@ -108,14 +110,13 @@
   .main-info__title {
     padding-top: 75px;
     padding-left: 90px;
-    width: 470px;
+    width: 62%;
     font-size: 60px;
     line-height: 70px;
   }
 
   .main-info__message {
     font-size: 18px;
-    width: 356px;
     padding-left: 140px;
 
     &::before {
@@ -127,7 +128,54 @@
   .main-info__button {
     width: 379px;
     margin-left: 139px;
+    margin-top: 45px;
     padding: 14px;
     padding-top: 17px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-info {
+    margin-top: 37px;
+    min-height: 555px;
+
+    @include padding;
+
+    &::before {
+      background-size: 301px 220px;
+      width: 301px;
+      height: 220px;
+
+      left: 7%;
+    }
+  }
+
+  .main-info__title {
+    padding-top: 194px;
+    padding-left: 0;
+    width: 100%;
+
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .main-info__message {
+    font-size: 16px;
+    padding-left: 17%;
+    width: 83%;
+
+    &::before {
+      width: 33px;
+      left: 0;
+    }
+  }
+
+  .main-info__button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 42px;
+
+    padding-left: 11px;
+    padding-right: 11px;
   }
 }
