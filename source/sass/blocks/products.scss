@@ -6,6 +6,7 @@
 .products__list {
   @include list-reset;
   margin: 0 auto;
+  margin-bottom: 127px;
   max-width: 1440px;
   padding: 0 135px;
 
