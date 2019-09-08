@@ -5,6 +5,7 @@
 
 .contact-form__wrapper {
   padding: 0 135px;
+  position: relative;
 }
 
 .contact-form__form {
@@ -25,7 +26,7 @@
     width: 511px;
     height: 228px;
     top: 161px;
-    left: 80px;
+    right: 55%;
   }
 }
 
@@ -61,8 +62,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-
-  margin-bottom: 40px;
 }
 
 .contact-form__form-textarea {
@@ -102,6 +101,17 @@
   padding: 0 19px;
   padding-top: 14px;
   padding-bottom: 8px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff;
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contact-form__form-checkbox-container {
@@ -150,6 +160,32 @@
 
   top: 2px;
   left: 3px;
+}
+
+.contact-form__triangle-1 {
+  display: inline-block;
+
+  position: absolute;
+  top: 94px;
+  right: 54%;
+}
+
+.contact-form__triangle-2 {
+  display: inline-block;
+
+  position: absolute;
+  top: 293px;
+  right: 60%;
+}
+
+.contact-form__triangle-1-image {
+  width: 636px;
+  height: 636px;
+}
+
+.contact-form__triangle-2-image {
+  width: 373px;
+  height: 373px;
 }
 
 @media (max-width: $desktop-width) {

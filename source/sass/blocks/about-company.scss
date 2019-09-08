@@ -73,6 +73,10 @@
   }
 }
 
+.about-company__text--tablet-hidden {
+  display: none;
+}
+
 @media (max-width: $desktop-width) {
   .about-company__wrapper {
     padding-top: 30px;
@@ -103,7 +107,16 @@
   .about-company__button {
     margin-top: 34px;
   }
+
+  .about-company__text--tablet-hidden {
+    display: inline;
+  }
+
+  .about-company__text--display-hidden {
+    display: none;
+  }
 }
+
 
 @media (max-width: $tablet-width) {
   .about-company__wrapper {

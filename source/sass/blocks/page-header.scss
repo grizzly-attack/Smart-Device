@@ -45,6 +45,15 @@
   padding-bottom: 8px;
   border: 1px solid #ffffff;
   border-radius: 5px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #1b2931;
+  }
+
+  &:active {
+    color: rgba(27, 41, 49, 0.3);
+  }
 }
 
 .page-header__contacts {
@@ -96,6 +105,15 @@
     left: 0;
   }
 }
+
+.page-header__logo-image-mobile {
+  display: none;
+}
+
+.page-header__logo-image-desktop .logo-detail {
+  fill: #ffffff;
+}
+
 
 @media (max-width: $desktop-width) {
   .page-header {
@@ -178,6 +196,7 @@
   }
 
   .page-header__logo-image-mobile {
+    display: inline-block;
     width: 38px;
     height: 38px;
   }
