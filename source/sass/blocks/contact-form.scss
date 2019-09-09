@@ -6,13 +6,15 @@
 .contact-form__wrapper {
   padding: 0 135px;
   position: relative;
+
+  box-sizing: border-box;
 }
 
 .contact-form__form {
   width: 50%;
   padding-left: 50%;
   padding-top: 96px;
-  padding-bottom: 113px;
+  padding-bottom: 120px;
 
   position: relative;
 
@@ -162,30 +164,55 @@
   left: 3px;
 }
 
+.contact-form__decoration {
+  display: inline-block;
+
+  position: absolute;
+  top: -60px;
+  right: 54%;
+}
+
 .contact-form__triangle-1 {
   display: inline-block;
 
   position: absolute;
-  top: 94px;
-  right: 54%;
+
+  top: 330px;
+  right: -215px;
 }
 
 .contact-form__triangle-2 {
   display: inline-block;
 
   position: absolute;
-  top: 293px;
-  right: 60%;
+
+  width: 234px;
+  height: 234px;
+  top: 60px;
+  right: -160px;
+}
+
+.contact-form__decoration-image {
+  width: 671px;
+  height: 641px;
 }
 
 .contact-form__triangle-1-image {
-  width: 636px;
-  height: 636px;
+  width: 373px;
+  height: 373px;
+
+  stroke: rgba(255, 255, 255, 0.2);
+  transform: rotate(-150deg);
+
+  overflow-x: hidden;
 }
 
 .contact-form__triangle-2-image {
-  width: 373px;
-  height: 373px;
+  width: 234px;
+  height: 234px;
+
+  stroke: rgba(255, 255, 255, 0.2);
+  transform: rotate(30deg);
 }
 
 @media (max-width: $desktop-width) {
@@ -208,6 +235,10 @@
   .contact-form__form-title {
     font-size: 32px;
     line-height: 48px;
+  }
+
+  .contact-form__decoration {
+    display: none;
   }
 }
 

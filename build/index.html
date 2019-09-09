@@ -83,13 +83,18 @@
         <path d="M9.98812 19.6269C9.86104 19.4998 9.68528 19.4266 9.50488 19.4266C9.3251 19.4266 9.14941 19.4998 9.02158 19.6269C8.89443 19.7541 8.82129 19.9305 8.82129 20.111C8.82129 20.2908 8.89437 20.4672 9.02158 20.5944C9.14873 20.7215 9.3251 20.7947 9.50488 20.7947C9.68535 20.7947 9.86104 20.7215 9.98812 20.5944C10.1159 20.4665 10.1891 20.2908 10.1891 20.111C10.1891 19.9305 10.1159 19.7548 9.98812 19.6269Z"></path>
       </symbol>
 
-      <symbol viewBox="0 0 637 640" id="triangle">
-        <path opacity="1" d="M592.842 159.584L318.167 635.334L43.4923 159.584L592.842 159.584Z" stroke="white" fill="none"></path>
-        <g fill="white">
-          <circle cx="43" cy="159" r="5"></circle>
-          <circle cx="318" cy="635" r="5"></circle>
-          <circle cx="593" cy="159" r="5"></circle>
-        </g>
+      <symbol viewBox="0 0 671 641" id="decoration">
+        <path opacity="0.2" d="M347.148 357.75L186.5 636L25.8523 357.75L347.148 357.75Z" stroke="white" fill="none"></path>
+        <circle cx="26" cy="358" r="5" fill="white"></circle>
+        <circle cx="187" cy="636" r="5" fill="white"></circle>
+        <path opacity="0.2" d="M626.842 159.584L352.167 635.334L77.4923 159.584L626.842 159.584Z" stroke="white" fill="none"></path>
+        <circle cx="77" cy="159" r="5" fill="white"></circle>
+        <circle cx="352" cy="635" r="5" fill="white"></circle>
+        <circle cx="627" cy="159" r="5" fill="white"></circle>
+      </symbol>
+
+      <symbol viewBox="0 0 333 288" id="triangle-1">
+        <path d="M5.85229 279.25L166.5 1L327.148 279.25H5.85229Z" fill="none"></path>
       </symbol>
 
       <symbol viewBox="0 0 27 27" id="fb" class="page-footer-icon">
@@ -118,6 +123,24 @@
       </p>
 
       <a class="page-header__button" href="#">Заказать звонок</a>
+
+      <div class="page-header__popup popup">
+        <form class="popup__form">
+          <button class="popup__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+          <p class="popup__title">Закажите звонок</p>
+          <p class="popup__message">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <input class="popup__field" id="popup-name" type="text" name="popup-name" placeholder="Имя">
+          <input class="popup__field" id="popup-phone" type="tel" name="popup-phone" placeholder="Телефон">
+
+          <textarea class="popup__textarea" id="popup-question" name="popup-question" placeholder="Ваш вопрос"></textarea>
+          <button class="popup__button" type="submit">Отправить</button>
+
+          <div class="popup__checkbox-container">
+            <input class="visually-hidden popup__checkbox" type="checkbox" id="popup-consent" name="consent" checked="">
+            <label for="popup-consent">Я согласен на обработку  персональных данных</label>
+          </div>
+        </form>
+      </div>
     </div>
   </header>
 
@@ -189,12 +212,15 @@
       <div class="contact-form__wrapper wrapper">
         <h2 class="visually-hidden">Форма обратной связи</h2>
 
-        <!--<span class="contact-form__triangle-1">
-          <svg class="contact-form__triangle-1-image"><use xlink:href="#triangle"></use></svg>
+        <span class="contact-form__decoration">
+          <svg class="contact-form__decoration-image"><use xlink:href="#decoration"></use></svg>
+        </span>
+        <span class="contact-form__triangle-1">
+          <svg class="contact-form__triangle-1-image"><use xlink:href="#triangle-1"></use></svg>
         </span>
         <span class="contact-form__triangle-2">
-          <svg class="contact-form__triangle-2-image"><use xlink:href="#triangle"></use></svg>
-        </span>-->
+          <svg class="contact-form__triangle-2-image"><use xlink:href="#triangle-1"></use></svg>
+        </span>
 
         <form class="contact-form__form">
           <p class="contact-form__form-title">Остались вопросы? Задайте их нам!</p>
@@ -278,6 +304,10 @@
     var toggle = document.querySelector('.page-footer__toggle');
     var footerBlock = document.querySelector('.page-footer__block');
 
+    var openButton = document.querySelector('.page-header__button');
+    var popup = document.querySelector('.popup');
+    var close = document.querySelector('.popup__close-button');
+
     toggle.classList.remove('page-footer__toggle--js-locked');
     footerBlock.classList.remove('page-footer__block--js-locked');
     toggle.addEventListener('click', function() {
@@ -285,12 +315,24 @@
         toggle.classList.remove('page-footer__toggle--closed');
         toggle.classList.add('page-footer__toggle--opened');
         footerBlock.classList.remove('page-footer__block--hidden');
-      } else {
+      }
+      else {
         toggle.classList.add('page-footer__toggle--closed');
         toggle.classList.remove('page-footer__toggle--opened');
         footerBlock.classList.add('page-footer__block--hidden');
       }
     });
+
+    openButton.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      popup.classList.add('popup--show');
+    });
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("popup--show");
+    });
+
   </script>
 </body>
 </html>
