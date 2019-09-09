@@ -7,22 +7,52 @@
   margin: 0 auto;
   max-width: 1440px;
 
-  padding-top: 112px;
-  padding-left: 135px;
-  padding-right: 135px;
+  padding-top: 113px;
+  padding-left: 134px;
+  padding-right: 134px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   box-sizing: border-box;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/decoration-3.svg"), url("../img/decoration-4.svg"), url("../img/decoration-5.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 400px 108px, 1508px 424px, 44px 8px;
+    background-size: 872px 873px, 224px 259px, 224px 259px;
+    width: 1798px;
+    height: 1048px;
+    top: 38px;
+    left: -80px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/decoration-6.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 872px 873px;
+    width: 872px;
+    height: 873px;
+    top: 444px;
+    left: -537px;
+  }
 }
 
 .advantages__item {
   width: 49%;
   min-height: 299px;
 
-  padding: 40px 43px 49px 45px;
-  margin-bottom: 30px;
+  background-color: #ffffff;
+
+  padding: 35px 43px 49px 43px;
+  margin-bottom: 29px;
   box-sizing: border-box;
 
   border: 1px solid #ebebeb;
@@ -31,6 +61,7 @@
   cursor: pointer;
 
   position: relative;
+  z-index: 1;
 
   &:hover {
     background-color: $blue;
@@ -50,7 +81,7 @@
 .advantages__item-image {
   position: absolute;
   top: 40px;
-  left: 45px;
+  left: 43px;
   fill: $blue;
 }
 
@@ -75,6 +106,21 @@
     padding: 0 25px;
     padding-top: 54px;
     max-width: 1023px;
+
+    &::before {
+      background-image: url("../img/decoration-3.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 872px 873px;
+      width: 872px;
+      height: 873px;
+      top: 89px;
+      left: 210px;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .advantages__item-image {
@@ -86,11 +132,15 @@
     width: 48%;
     min-height: 232px;
 
-    padding: 23px 26px 12px 26px;
+    padding: 23px 21px 12px 24px;
   }
 
   .advantages__item-title {
-    padding-top: 44px;
+    padding-top: 43px;
+  }
+
+  .advantages__item-text {
+    margin-top: 8px;
   }
 }
 
@@ -102,16 +152,27 @@
   }
 
   .advantages__item-image {
-    left: 27px;
+    left: 22px;
   }
 
   .advantages__item {
     width: 100%;
+    min-height: 232px;
 
-    padding: 24px 12px 15px 27px;
+    padding: 19px 13px 30px 24px;
+    margin-bottom: 19px;
+
+    &:nth-child(2) {
+      padding-right: 10px;
+    }
   }
 
   .advantages__item-title {
     padding-top: 50px;
+    font-size: 20px;
+  }
+
+  .advantages__item-text {
+    line-height: 21px;
   }
 }

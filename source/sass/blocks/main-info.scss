@@ -1,11 +1,11 @@
 .main-info {
-  margin-top: 173px;
+  margin-top: 167px;
   color: #ffffff;
   position: relative;
   min-height: 620px;
   box-sizing: border-box;
 
-  /*&::before {
+  &::before {
     content: "";
     position: absolute;
 
@@ -16,12 +16,29 @@
 
     width: 705px;
     height: 515px;
-    left: 54%;
+    left: 55.5%;
     top: 0;
 
-    overflow: hidden;
     z-index: -1;
-  }*/
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    background-image: url("../img/decoration-1.svg");
+    background-repeat: no-repeat;
+    background-size: 670px auto;
+    background-position: 0 0;
+
+    width: 670px;
+    height: 647px;
+
+    left: 55%;
+    top: -140px;
+
+    z-index: -1;
+  }
 }
 
 .main-info__title {
@@ -31,10 +48,11 @@
   font-size: 80px;
   line-height: 94px;
   text-transform: uppercase;
+  letter-spacing: 0.07em;
 
   margin: 0;
   padding-top: 58px;
-  padding-left: 15px;
+  padding-left: 11px;
   width: 54%;
 }
 
@@ -43,9 +61,9 @@
 
   font-size: 22px;
   line-height: 34px;
-  padding-left: 109px;
+  padding-left: 108px;
   margin: 0;
-  margin-top: 31px;
+  margin-top: 26px;
 
   position: relative;
 
@@ -54,8 +72,8 @@
     position: absolute;
     width: 66px;
     height: 2px;
-    left: 15px;
-    top: 14px;
+    left: 13px;
+    top: 16px;
 
     background-color: #ffffff;
   }
@@ -63,8 +81,8 @@
 
 .main-info__button {
   display: block;
-  margin-left: 109px;
-  margin-top: 37px;
+  margin-left: 108px;
+  margin-top: 45px;
   width: 407px;
   padding: 17px 28px;
   box-sizing: border-box;
@@ -76,31 +94,63 @@
   line-height: 19px;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  cursor: pointer;
+
+  &--mobile {
+    display: none;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .main-info__scroll {
+  display: block;
   margin: 0;
 
   font-size: 14px;
   line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
 
   opacity: 0.5;
-  transform: rotate(-90deg);
-  width: 93px;
+
+  position: absolute;
+  left: 13px;
+  bottom: 73px;
 }
 
 @media (max-width: $desktop-width) {
   .main-info {
-    margin-top: 41px;
+    margin-top: 36px;
     min-height: 573px;
 
-    /*&::before {
+    &::before {
       background-size: 465px 340px;
       width: 465px;
       height: 340px;
 
-      left: 69%;
-    }*/
+      left: 66.5%;
+    }
+
+    &::after {
+      background-size: 533px auto;
+
+      width: 533px;
+      height: 511px;
+      left: 57%;
+      top: -155px;
+    }
   }
 
   .main-info__scroll {
@@ -117,7 +167,10 @@
 
   .main-info__message {
     font-size: 18px;
+    line-height: 28px;
     padding-left: 140px;
+
+    margin-top: 28px;
 
     &::before {
       width: 33px;
@@ -128,9 +181,8 @@
   .main-info__button {
     width: 379px;
     margin-left: 139px;
-    margin-top: 45px;
-    padding: 14px;
-    padding-top: 17px;
+    margin-top: 55px;
+    padding: 18px 14px;
   }
 }
 
@@ -141,13 +193,21 @@
 
     @include padding;
 
-    /*&::before {
+    &::before {
       background-size: 301px 220px;
       width: 301px;
       height: 220px;
 
-      left: 7%;
-    }*/
+      left: 26px;
+    }
+
+    &::after {
+      background-size: 510px auto;
+      width: 510px;
+      height: 487px;
+      left: 150px;
+      top: -141px;
+    }
   }
 
   .main-info__title {
@@ -161,8 +221,10 @@
 
   .main-info__message {
     font-size: 16px;
-    padding-left: 17%;
+    padding-left: 50px;
+    margin-top: 26px;
     width: 83%;
+    line-height: 25px;
 
     &::before {
       width: 33px;
@@ -173,9 +235,17 @@
   .main-info__button {
     width: 100%;
     margin-left: 0;
-    margin-top: 42px;
+    margin-top: 40px;
 
     padding-left: 11px;
     padding-right: 11px;
+
+    &--mobile {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
   }
 }

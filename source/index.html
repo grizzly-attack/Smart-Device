@@ -83,20 +83,6 @@
         <path d="M9.98812 19.6269C9.86104 19.4998 9.68528 19.4266 9.50488 19.4266C9.3251 19.4266 9.14941 19.4998 9.02158 19.6269C8.89443 19.7541 8.82129 19.9305 8.82129 20.111C8.82129 20.2908 8.89437 20.4672 9.02158 20.5944C9.14873 20.7215 9.3251 20.7947 9.50488 20.7947C9.68535 20.7947 9.86104 20.7215 9.98812 20.5944C10.1159 20.4665 10.1891 20.2908 10.1891 20.111C10.1891 19.9305 10.1159 19.7548 9.98812 19.6269Z"/>
       </symbol>
 
-      <symbol viewBox="0 0 671 641" id="decoration">
-        <path opacity="0.2" d="M347.148 357.75L186.5 636L25.8523 357.75L347.148 357.75Z" stroke="white" fill="none"/>
-        <circle cx="26" cy="358" r="5" fill="white"/>
-        <circle cx="187" cy="636" r="5" fill="white"/>
-        <path opacity="0.2" d="M626.842 159.584L352.167 635.334L77.4923 159.584L626.842 159.584Z" stroke="white" fill="none"/>
-        <circle cx="77" cy="159" r="5" fill="white"/>
-        <circle cx="352" cy="635" r="5" fill="white"/>
-        <circle cx="627" cy="159" r="5" fill="white"/>
-      </symbol>
-
-      <symbol viewBox="0 0 333 288" id="triangle-1">
-        <path d="M5.85229 279.25L166.5 1L327.148 279.25H5.85229Z" fill="none"/>
-      </symbol>
-
       <symbol viewBox="0 0 27 27" id="fb" class="page-footer-icon">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M27 13.5C27 6.04462 20.9562 0 13.5 0C6.04379 0 0 6.04462 0 13.5C0 20.9562 6.04369 27 13.5 27C20.9562 27 27 20.9563 27 13.5ZM16.8835 9.29395H15.1437C14.6754 9.29395 14.3464 9.69053 14.3464 10.185V10.9604H16.8312L16.4288 13.4772H14.3455V20.2238H11.8025V13.4772H10.115V10.9604H11.8025V9.677H11.8075C11.8523 8.21392 12.3602 6.82092 14.8383 6.73315V6.72388H16.8835V9.29395Z"/>
       </symbol>
@@ -123,24 +109,6 @@
       </p>
 
       <a class="page-header__button" href="#">Заказать звонок</a>
-
-      <div class="page-header__popup popup">
-        <form class="popup__form">
-          <button class="popup__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
-          <p class="popup__title">Закажите звонок</p>
-          <p class="popup__message">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-          <input class="popup__field" id="popup-name" type="text" name="popup-name" placeholder="Имя">
-          <input class="popup__field" id="popup-phone" type="tel" name="popup-phone" placeholder="Телефон">
-
-          <textarea class="popup__textarea" id="popup-question" name="popup-question" placeholder="Ваш вопрос"></textarea>
-          <button class="popup__button" type="submit">Отправить</button>
-
-          <div class="popup__checkbox-container">
-            <input class="visually-hidden popup__checkbox" type="checkbox" id="popup-consent" name="consent" checked>
-            <label for="popup-consent">Я согласен на обработку  персональных данных</label>
-          </div>
-        </form>
-      </div>
     </div>
   </header>
 
@@ -150,11 +118,11 @@
     <section class="main-info wrapper">
       <h2 class="main-info__title">Печатные платы</h2>
       <p class="main-info__message">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a class="main-info__button">Получить бесплатную консультацию</a>
-      <p class="main-info__scroll">Скролл вниз</p>
+      <a class="main-info__button"><span class="main-info__button--desktop">Получить бесплатную консультацию</span><span class="main-info__button--mobile">Бесплатная консультация</span></a>
+      <a class="main-info__scroll" href="#advantages">Скролл вниз</a>
     </section>
 
-    <section class="advantages">
+    <section class="advantages"  id="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -212,16 +180,6 @@
       <div class="contact-form__wrapper wrapper">
         <h2 class="visually-hidden">Форма обратной связи</h2>
 
-        <span class="contact-form__decoration">
-          <svg class="contact-form__decoration-image"><use xlink:href="#decoration"></use></svg>
-        </span>
-        <span class="contact-form__triangle-1">
-          <svg class="contact-form__triangle-1-image"><use xlink:href="#triangle-1"></use></svg>
-        </span>
-        <span class="contact-form__triangle-2">
-          <svg class="contact-form__triangle-2-image"><use xlink:href="#triangle-1"></use></svg>
-        </span>
-
         <form class="contact-form__form">
           <p class="contact-form__form-title">Остались вопросы? Задайте их нам!</p>
           <p class="contact-form__form-text">Мы проконсультируем Вас бесплатно</p>
@@ -239,6 +197,24 @@
           </div>
         </form>
       </div>
+    </section>
+
+    <section class="popup">
+      <form class="popup__form">
+        <button class="popup__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <p class="popup__title">Закажите звонок</p>
+        <p class="popup__message">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <input class="popup__field" id="popup-name" type="text" name="popup-name" placeholder="Имя">
+        <input class="popup__field" id="popup-phone" type="tel" name="popup-phone" placeholder="Телефон">
+
+        <textarea class="popup__textarea" id="popup-question" name="popup-question" placeholder="Ваш вопрос"></textarea>
+        <button class="popup__button" type="submit">Отправить</button>
+
+        <div class="popup__checkbox-container">
+          <input class="visually-hidden popup__checkbox" type="checkbox" id="popup-consent" name="consent" checked>
+          <label for="popup-consent">Я согласен на обработку  персональных данных</label>
+        </div>
+      </form>
     </section>
   </main>
 
@@ -295,7 +271,7 @@
       <div class="page-footer__wrapper page-footer__info">
         <p class="page-footer__info-content page-footer__info-content--hidden"><span class="page-footer__info-content-rights">Все права защищены </span>1999-2018 SD Service Devices</p>
         <a class="page-footer__info-content page-footer__info-link" href="#">Условия конфиденциальности</a>
-        <p class="page-footer__info-content">Developed by wow studio </p>
+        <p class="page-footer__info-content page-footer__info-content--right">Developed by wow studio </p>
       </div>
     </div>
   </footer>

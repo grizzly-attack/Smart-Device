@@ -3,9 +3,9 @@
 }
 
 .about-company__wrapper {
-  padding-top: 80px;
+  padding-top: 76px;
   padding-bottom: 110px;
-  padding-left: 323px;
+  padding-left: 315px;
   padding-right: 141px;
   width: 100%;
 
@@ -24,7 +24,7 @@
     width: 220px;
     height: 317px;
     top: 80px;
-    left: 100px;
+    left: 105px;
   }
 }
 
@@ -39,7 +39,7 @@
 
 .about-company__text {
   margin: 0;
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
 .about-company__button {
@@ -79,9 +79,9 @@
 
 @media (max-width: $desktop-width) {
   .about-company__wrapper {
-    padding-top: 30px;
+    padding-top: 32px;
     padding-bottom: 83px;
-    padding-left: 213px;
+    padding-left: 211px;
     padding-right: 25px;
     width: 100%;
 
@@ -91,7 +91,7 @@
 
       width: 251px;
       height: 362px;
-      top: 24px;
+      top: 33px;
       left: -10px;
     }
   }
@@ -101,11 +101,11 @@
   }
 
   .about-company__text {
-    margin-top: 23px;
+    margin-top: 21px;
   }
 
   .about-company__button {
-    margin-top: 34px;
+    margin-top: 41px;
   }
 
   .about-company__text--tablet-hidden {
@@ -120,7 +120,7 @@
 
 @media (max-width: $tablet-width) {
   .about-company__wrapper {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 65px;
     padding-left: 15px;
     padding-right: 15px;
@@ -135,6 +135,10 @@
   }
 
   .about-company__text {
-    margin-top: 19px;
+    margin-top: 40px;
+
+    &:first-child {
+      margin-top: 14px;
+    }
   }
 }

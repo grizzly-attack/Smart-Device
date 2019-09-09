@@ -3,7 +3,8 @@
   max-width: 1440px;
   margin: 0 auto;
 
-  @include padding;
+  padding-left: 14px;
+  padding-right: 16px;
   padding-top: 33px;
   box-sizing: border-box;
 
@@ -35,6 +36,7 @@
   text-decoration: none;
   text-align: center;
   line-height: 16px;
+  text-transform: uppercase;
 
   display: block;
   width: 180px;
@@ -57,7 +59,7 @@
 }
 
 .page-header__contacts {
-  width: 650px;
+  width: 660px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -66,7 +68,7 @@
 }
 
 .page-header__link--mail {
-  margin-right: 88px;
+  margin-right: 79px;
   padding-left: 39px;
 
   position: relative;
@@ -118,6 +120,7 @@
 @media (max-width: $desktop-width) {
   .page-header {
     max-width: 1023px;
+    padding: 0 25px;
     padding-top: 20px;
   }
 
@@ -178,7 +181,12 @@
 @media (max-width: $tablet-width) {
   .page-header {
     max-width: 767px;
+    padding: 0 15px;
     padding-top: 17px;
+  }
+
+  .page-header__link {
+    margin-left: 24px;
   }
 
   .page-header__logo {
