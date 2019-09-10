@@ -149,6 +149,11 @@
     padding: 0 15px;
     padding-top: 37px;
     max-width: 767px;
+
+    &::before {
+      top: 651px;
+      left: -120px;
+    }
   }
 
   .advantages__item-image {

@@ -207,6 +207,7 @@
 @media (max-width: $tablet-width) {
   .products__list {
     max-width: 767px;
+    margin-bottom: 64px;
   }
 
   .products__title {
@@ -215,6 +216,7 @@
 
     max-width: 767px;
 
+    margin-top: 49px;
     margin-bottom: 7px;
 
     font-size: 28px;
@@ -222,12 +224,28 @@
   }
 
   .products__item {
-    margin-top: 30px;
+    margin-top: 31px;
+    min-height: 255px;
   }
 
   .products__link {
-    padding: 23px;
+    padding: 20px;
     padding-right: 34%;
     padding-left: 35px;
+  }
+
+  .products__item--accessories {
+    .products__link {
+      padding-top: 29px;
+    }
+  }
+
+  .products__button {
+    &::before {
+      width: 5px;
+      height: 5px;
+      left: 27px;
+      top: 28px;
+    }
   }
 }

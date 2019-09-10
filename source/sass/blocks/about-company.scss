@@ -136,9 +136,13 @@
 
   .about-company__text {
     margin-top: 40px;
+  }
 
-    &:first-child {
-      margin-top: 14px;
-    }
+  .about-company__text--margin {
+    margin-top: 14px;
+  }
+
+  .about-company__button {
+    margin-top: 27px;
   }
 }

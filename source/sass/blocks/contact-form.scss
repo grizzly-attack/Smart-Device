@@ -232,31 +232,36 @@
   }
 
   .contact-form__form {
-    padding-top: 33px;
-    padding-bottom: 41px;
+    padding-top: 26px;
+    padding-bottom: 43px;
   }
 
   .contact-form__form-title {
     font-size: 28px;
-    line-height: 45px;
+    line-height: 42px;
   }
 
   .contact-form__form-text {
+    margin-top: 12px;
     margin-bottom: 25px;
   }
 
   .contact-form__form-field {
     width: 100%;
     margin-bottom: 31px;
+    padding-left: 18px;
   }
 
   .contact-form__form-textarea {
     margin-top: 0;
     margin-bottom: 31px;
+    padding-left: 18px;
+    min-height: 104px;
   }
 
   .contact-form__form-button {
     width: 100%;
+    padding-bottom: 13px;
   }
 
   .contact-form__form-checkbox-container {

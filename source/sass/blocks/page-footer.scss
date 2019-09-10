@@ -264,8 +264,9 @@
   }
 
   .page-footer__social-text {
-    padding-top: 26px;
+    padding-top: 19px;
     padding-bottom: 31px;
+    text-transform: uppercase;
   }
 
   .page-footer__column {
@@ -315,6 +316,7 @@
   .page-footer__info-content {
     padding-top: 21px;
     text-align: center;
+    width: 100%;
   }
 
   .page-footer__list {
@@ -323,8 +325,8 @@
 
   .page-footer__toggle {
     position: absolute;
-    top: 28px;
-    right: 15px;
+    top: 31px;
+    right: 18px;
     z-index: 2;
 
     background-color: transparent;
