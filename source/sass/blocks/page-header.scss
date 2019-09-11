@@ -27,16 +27,44 @@
 .page-header__link {
   color: #ffffff;
   text-decoration: none;
-  line-height: 18px;
+  line-height: 1.2;
+  position: relative;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.page-header__link--mail {
+  padding-left: 39px;
+  margin-right: 79px;
+
+  .page-header__link-image {
+    top: 3px;
+  }
+}
+
+.page-header__link--tel {
+  padding-left: 34px;
+}
+
+.page-header__link-image {
+  position: absolute;
+  fill: $blue;
+  top: 0;
+  left: 0;
 }
 
 .page-header__button {
   font-family: $font-Roboto;
   color: #ffffff;
-  text-decoration: none;
   text-align: center;
-  line-height: 16px;
+  font-size: 14px;
   text-transform: uppercase;
+  background-color: transparent;
+  letter-spacing: 0.05em;
+
+  cursor: pointer;
 
   display: block;
   width: 180px;
@@ -67,55 +95,9 @@
   justify-content: space-between;
 }
 
-.page-header__link--mail {
-  margin-right: 79px;
-  padding-left: 39px;
-
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/envelope_icon.svg");
-    background-repeat: no-repeat;
-    background-size: 19px 14px;
-    background-position: 0 0;
-
-    width: 19px;
-    height: 14px;
-    top: 0;
-    left: 0;
-  }
-}
-
-.page-header__link--tel {
-  padding-left: 34px;
-
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/phone-call_icon.svg");
-    background-repeat: no-repeat;
-    background-size: 18px 18px;
-    background-position: 0 0;
-
-    width: 18px;
-    height: 18px;
-    top: 0;
-    left: 0;
-  }
-}
-
-.page-header__logo-image-mobile {
+.page-header-mobile {
   display: none;
 }
-
-.page-header__logo-image-desktop .logo-detail {
-  fill: #ffffff;
-}
-
 
 @media (max-width: $desktop-width) {
   .page-header {
@@ -124,7 +106,7 @@
     padding-top: 20px;
   }
 
-  .page-header__link--hidden {
+  .page-header__link-hidden {
     display: none;
   }
 
@@ -146,17 +128,29 @@
   }
 
   .page-header__link--mail {
-    margin: 0;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .page-header__link-image--tel {
+    width: 24px;
+    height: 24px;
+  }
+
+  .page-header__link-image--mail {
     width: 25px;
     height: 19px;
-    margin-right: 0;
-    padding-left: 0;
+  }
 
-    &::before {
-      background-size: 25px 19px;
+  .page-header__link-image {
+    position: static;
 
-      width: 25px;
-      height: 19px;
+    &:hover {
+      fill: #ffffff;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
@@ -165,16 +159,7 @@
   }
 
   .page-header__link--tel {
-    width: 24px;
-    height: 24px;
     padding-left: 0;
-
-    &::before {
-      background-size: 24px 24px;
-
-      width: 24px;
-      height: 24px;
-    }
   }
 }
 
@@ -199,11 +184,11 @@
     height: 38px;
   }
 
-  .page-header__logo-image-desktop {
+  .page-header-desktop {
     display: none;
   }
 
-  .page-header__logo-image-mobile {
+  .page-header-mobile {
     display: inline-block;
     width: 38px;
     height: 38px;

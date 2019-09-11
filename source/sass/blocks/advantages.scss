@@ -91,7 +91,7 @@
 
   font-family: $font-Roboto;
   font-size: 24px;
-  line-height: 34px;
+  line-height: 1.5;
   font-weight: 400;
   color: $blue;
 }
@@ -132,7 +132,7 @@
     width: 48%;
     min-height: 232px;
 
-    padding: 23px 21px 12px 24px;
+    padding: 23px 20px 25px 24px;
   }
 
   .advantages__item-title {
@@ -141,6 +141,7 @@
 
   .advantages__item-text {
     margin-top: 8px;
+    line-height: 1.35;
   }
 }
 
@@ -164,7 +165,7 @@
     width: 100%;
     min-height: 232px;
 
-    padding: 19px 13px 30px 24px;
+    padding: 19px 13px 27px 24px;
     margin-bottom: 19px;
 
     &:nth-child(2) {
@@ -178,6 +179,6 @@
   }
 
   .advantages__item-text {
-    line-height: 21px;
+    line-height: 1.4;
   }
 }

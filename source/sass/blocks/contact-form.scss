@@ -25,12 +25,12 @@
     position: absolute;
     background-image: url("../img/paper_airplane.png"), url("../img/decoration-1.svg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 131px 223px, -41px 0;
-    background-size: 511px 228px, 714px 641px;
+    background-position: 153px 220px, -41px 0;
+    background-size: 513px 290px, 714px 641px;
     width: 719px;
     height: 641px;
     top: -60px;
-    right: 55%;
+    right: 54%;
   }
 
   &::after {
@@ -52,7 +52,6 @@
 
   font-family: $font-Roboto;
   font-size: 36px;
-  line-height: 51px;
 }
 
 .contact-form__form-text {
@@ -68,6 +67,8 @@
   padding: 16px 19px;
   padding-top: 14px;
   box-sizing: border-box;
+
+  color: #ffffff;
 
   &::placeholder {
     color: #ffffff;
@@ -95,6 +96,8 @@
   padding: 12px 19px;
   box-sizing: border-box;
 
+  color: #ffffff;
+
   resize: none;
 
   &::placeholder {
@@ -106,9 +109,10 @@
   display: inline-block;
   background-color: transparent;
   color: #ffffff;
+
+  font-family: $font-Roboto;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
   text-transform: uppercase;
 
   border: 1px solid #ffffff;
@@ -135,13 +139,12 @@
 .contact-form__form-checkbox-container {
   display: inline-block;
   box-sizing: border-box;
-  width: 45%;
+  width: 46%;
 }
 
 .contact-form__form-checkbox-container label {
   padding-left: 34px;
   font-size: 14px;
-  line-height: 16px;
 
   position: relative;
 
@@ -203,7 +206,6 @@
 
   .contact-form__form-title {
     font-size: 32px;
-    line-height: 48px;
   }
 
   .contact-form__form-text {
@@ -233,12 +235,12 @@
 
   .contact-form__form {
     padding-top: 26px;
-    padding-bottom: 43px;
+    padding-bottom: 38px;
   }
 
   .contact-form__form-title {
     font-size: 28px;
-    line-height: 42px;
+    line-height: 1.5;
   }
 
   .contact-form__form-text {

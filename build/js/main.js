@@ -12,8 +12,6 @@
   var phone = popup.querySelector('[name="user-phone"]');
   var question = popup.querySelector('[name="user-question"]');
 
-  var values = ["name", "phone", "question"];
-
   toggle.classList.remove('page-footer__toggle--js-locked');
   footerBlock.classList.remove('page-footer__block--js-locked');
   toggle.addEventListener('click', function() {

@@ -25,13 +25,12 @@
 
   font-family: $font-Roboto;
   font-size: 28px;
-  line-height: 34px;
   font-weight: 400;
 }
 
 .popup__message {
   margin: 0;
-  margin-top: 7px;
+  margin-top: 10px;
 }
 
 .popup form > input {
@@ -43,6 +42,8 @@
   box-sizing: border-box;
 
   width: 100%;
+
+  color: #ffffff;
 
   &::placeholder {
     color: #ffffff;
@@ -72,6 +73,8 @@
 
   resize: none;
 
+  color: #ffffff;
+
   &::placeholder {
     color: #ffffff;
   }
@@ -85,7 +88,6 @@
   color: #ffffff;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
   text-transform: uppercase;
 
   border: 1px solid #ffffff;
@@ -118,7 +120,6 @@
 .popup__checkbox-container label {
   padding-left: 34px;
   font-size: 14px;
-  line-height: 16px;
 
   position: relative;
 
@@ -199,6 +200,10 @@
 
     top: 0;
     left: 50%;
+  }
+
+  &:hover {
+    opacity: 0.3;
   }
 }
 
