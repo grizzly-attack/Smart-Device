@@ -20,11 +20,12 @@
 }
 
 .page-header__list {
-  width: 460px;
+  width: 558px;
   margin: 0;
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .page-header__link {
@@ -43,7 +44,7 @@
 
 .page-header__link--mail {
   padding-left: 39px;
-  margin-right: 88px;
+  margin-right: 16%;
 
   .page-header__link-image {
     top: 8px;
@@ -52,6 +53,8 @@
 
 .page-header__link--tel {
   padding-left: 34px;
+  width: 240px;
+  box-sizing: border-box;
 }
 
 .page-header__link-image {
@@ -93,7 +96,7 @@
 }
 
 .page-header__contacts {
-  width: 660px;
+  width: 760px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -165,6 +168,7 @@
   }
 
   .page-header__link--tel {
+    width: auto;
     padding-left: 0;
   }
 }
