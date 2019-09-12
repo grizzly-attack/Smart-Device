@@ -20,8 +20,11 @@
 }
 
 .page-header__list {
-  width: 441px;
+  width: 460px;
   margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .page-header__link {
@@ -29,6 +32,9 @@
   text-decoration: none;
   line-height: 1.2;
   position: relative;
+  max-width: 235px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
   &:hover {
     color: $blue;
@@ -40,7 +46,7 @@
   margin-right: 79px;
 
   .page-header__link-image {
-    top: 3px;
+    top: 8px;
   }
 }
 
@@ -51,7 +57,7 @@
 .page-header__link-image {
   position: absolute;
   fill: $blue;
-  top: 0;
+  top: 5px;
   left: 0;
 }
 
@@ -71,7 +77,7 @@
   min-height: 45px;
   box-sizing: border-box;
   padding: 0 12px;
-  padding-top: 13px;
+  padding-top: 9px;
   padding-bottom: 8px;
   border: 1px solid #ffffff;
   border-radius: 5px;

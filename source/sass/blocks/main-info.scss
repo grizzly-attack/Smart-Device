@@ -83,6 +83,8 @@
   display: block;
   margin-left: 108px;
   margin-top: 45px;
+  margin-bottom: 30px;
+
   width: 407px;
   padding: 17px 28px;
   box-sizing: border-box;
@@ -200,7 +202,9 @@
       width: 301px;
       height: 220px;
 
-      left: 26px;
+      left: 0;
+      right: 50%;
+      transform: translateX(50%);
     }
 
     &::after {
@@ -216,15 +220,20 @@
     padding-top: 194px;
     padding-left: 0;
     width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
 
     font-size: 40px;
+    margin: 0 auto;
   }
 
   .main-info__message {
     font-size: 16px;
     padding-left: 50px;
+    margin: 0 auto;
     margin-top: 26px;
-    width: 83%;
+    width: 100%;
+    max-width: 500px;
 
     &::before {
       width: 33px;
@@ -234,7 +243,9 @@
 
   .main-info__button {
     width: 100%;
-    margin-left: 0;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 40px;
 
     padding-left: 11px;

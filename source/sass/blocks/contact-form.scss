@@ -70,6 +70,8 @@
 
   color: #ffffff;
 
+  border-radius: 0;
+
   &::placeholder {
     color: #ffffff;
   }
@@ -165,6 +167,10 @@
 
   top: 3px;
   left: 2px;
+}
+
+.contact-form__form-checkbox-container input + label:hover::before {
+  border-color: #1b2d37;
 }
 
 .contact-form__form-checkbox-container input:checked + label::after {
