@@ -1,8 +1,4 @@
 .about-company {
-  background-color: #ffffff;
-}
-
-.about-company__wrapper {
   padding-top: 76px;
   padding-bottom: 110px;
   padding-left: 315px;
@@ -76,12 +72,11 @@
 }
 
 @media (max-width: $desktop-width) {
-  .about-company__wrapper {
+  .about-company {
     padding-top: 29px;
     padding-bottom: 83px;
     padding-left: 211px;
     padding-right: 25px;
-    width: 100%;
 
     &::before {
       background-size: 251px auto;
@@ -115,9 +110,8 @@
   }
 }
 
-
 @media (max-width: $tablet-width) {
-  .about-company__wrapper {
+  .about-company {
     padding-top: 35px;
     padding-bottom: 65px;
     padding-left: 15px;

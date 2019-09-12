@@ -1,11 +1,15 @@
 .advantages {
   background-color: #ffffff;
+  overflow: hidden;
+}
+
+.advantages__wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .advantages__list {
   @include list-reset;
-  margin: 0 auto;
-  max-width: 1440px;
 
   padding-top: 113px;
   padding-left: 134px;
@@ -26,7 +30,7 @@
     background-position: 0 0;
     background-size: 2182px auto;
     width: 2182px;
-    height: 1191px;
+    height: 1346px;
     top: -28px;
     left: -504px;
   }

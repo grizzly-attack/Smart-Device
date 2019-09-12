@@ -1,4 +1,8 @@
 .main-info {
+  overflow: hidden;
+}
+
+.main-info__wrapper {
   margin-top: 167px;
   color: #ffffff;
   position: relative;
@@ -136,7 +140,7 @@
 }
 
 @media (max-width: $desktop-width) {
-  .main-info {
+  .main-info__wrapper {
     margin-top: 36px;
     min-height: 573px;
 
@@ -191,7 +195,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .main-info {
+  .main-info__wrapper {
     margin-top: 37px;
     min-height: 555px;
 
@@ -202,9 +206,8 @@
       width: 301px;
       height: 220px;
 
-      left: 0;
-      right: 50%;
-      transform: translateX(50%);
+      left: 50%;
+      transform: translateX(-45%);
     }
 
     &::after {
@@ -234,6 +237,7 @@
     margin-top: 26px;
     width: 100%;
     max-width: 500px;
+    box-sizing: border-box;
 
     &::before {
       width: 33px;

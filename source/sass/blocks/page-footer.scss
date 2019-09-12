@@ -109,7 +109,7 @@
   font-size: 15px;
   opacity: 0.5;
 
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 
   &:hover {
     color: $blue;
@@ -128,7 +128,7 @@
 }
 
 .page-footer__item {
-  padding-right: 14%;
+  padding-right: 12%;
   box-sizing: border-box;
 }
 
@@ -280,7 +280,7 @@
   .page-footer__social {
     flex-direction: column;
     padding: 0 15px;
-    padding-bottom: 54px;
+    padding-bottom: 50px;
   }
 
   .page-footer__social-text {
