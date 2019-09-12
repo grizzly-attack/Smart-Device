@@ -163,9 +163,10 @@
 
 .page-footer__info-link {
   display: block;
-  color: #1b2d37;
+  color: rgba(27, 45, 55, 0.5);
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 
   &:hover {
     color: $blue;

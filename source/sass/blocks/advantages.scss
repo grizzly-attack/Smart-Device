@@ -21,11 +21,24 @@
   &::before {
     content: "";
     position: absolute;
+    background-image: url("../img/decoration-group.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 2182px auto;
+    width: 2182px;
+    height: 1191px;
+    top: -28px;
+    left: -504px;
+  }
+
+  /*&::before {
+    content: "";
+    position: absolute;
     background-image: url("../img/decoration-3.svg"), url("../img/decoration-4.svg"), url("../img/decoration-5.svg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 400px 108px, 1508px 424px, 44px 8px;
     background-size: 872px 873px, 224px 259px, 224px 259px;
-    width: 1798px;
+    width: 1730px;
     height: 1048px;
     top: 38px;
     left: -80px;
@@ -42,7 +55,7 @@
     height: 873px;
     top: 444px;
     left: -537px;
-  }
+  }*/
 }
 
 .advantages__item {

@@ -2,10 +2,12 @@
 
   var toggle = document.querySelector('.page-footer__toggle');
   var footerBlock = document.querySelector('.page-footer__block');
+  var body = document.querySelector('body');
 
   var openButton = document.querySelector('.page-header__button');
   var popup = document.querySelector('.popup');
   var close = popup.querySelector('.popup__close-button');
+  var overlay = popup.querySelector('.popup__wrapper');
 
   var form = popup.querySelector('.popup__form');
   var userName = popup.querySelector('[name="user-name"]');
@@ -30,12 +32,14 @@
   openButton.addEventListener('click', function(evt) {
     evt.preventDefault();
     popup.classList.add('popup--show');
+    body.classList.add('popup-modal');
     userName.focus();
   });
 
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("popup--show");
+    body.classList.remove('popup-modal');
   });
 
   form.addEventListener("submit", function () {
@@ -49,7 +53,13 @@
     evt.preventDefault();
     if (popup.classList.contains("popup--show")) {
       popup.classList.remove("popup--show");
+      body.classList.remove("popup-modal");
       }
-    }
+    };
   });
 
+  overlay.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("popup--show");
+    body.classList.remove('popup-modal');
+  })
