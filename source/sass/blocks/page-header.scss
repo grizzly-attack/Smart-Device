@@ -21,7 +21,8 @@
 
 .page-header__list {
   @include list-reset;
-  width: 465px;
+  width: 552px;
+  margin-right: 30px;
 
   display: flex;
   flex-wrap: wrap;
@@ -29,9 +30,10 @@
 }
 
 .page-header__item {
-  max-width: 240px;
+  width: 249px;
   padding: 5px;
   padding-left: 0;
+  text-align: right;
 }
 
 .page-header__link {
@@ -102,12 +104,12 @@
 }
 
 .page-header__contacts {
-  width: 658px;
+  width: 775px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-header-mobile {
@@ -140,10 +142,12 @@
 
   .page-header__item {
     padding: 0;
+    width: auto;
   }
 
   .page-header__link {
     margin-left: 33px;
+    text-align: right;
   }
 
   .page-header__link--mail {
